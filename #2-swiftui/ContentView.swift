@@ -33,47 +33,179 @@ struct ContentView: View {
             }
             
             //雪花
-            ForEach(0..<70, id: \.self) { _ in
+            ZStack{
+                //最左中間
                 Circle()
+                    .frame(width: 43)
                     .foregroundStyle(Color.white)
-                    .frame(width: CGFloat.random(in: 10...60))
-                    .position(
-                        x: CGFloat.random(in: 0...1000),
-                        y: CGFloat.random(in: 0...880)
-                    )
-                    .opacity(Double.random(in: 0.3...0.8))
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.8)
+                    .offset(x:-226,y: 43)
+                //最左那顆上黏著
+                Circle()
+                    .frame(width: 23)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.5)
+                    .offset(x:-206,y: 25)
+                //聖誕帽左上
+                Circle()
+                    .frame(width: 33)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.7)
+                    .offset(x:-96,y: -193)
+                //左最上
+                Circle()
+                    .frame(width: 53)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.9)
+                    .offset(x:-126,y: -323)
+                //聖誕帽左上小
+                Circle()
+                    .frame(width: 13)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.4)
+                    .offset(x:-36,y: -263)
+                //聖誕帽右上小
+                Circle()
+                    .frame(width: 10)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.4)
+                    .offset(x:66,y: -213)
+                //左黏著咪不理
+                Circle()
+                    .frame(width: 50)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.6)
+                    .offset(x:-136,y: -13)
+                //最左上二
+                Circle()
+                    .frame(width: 40)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.5)
+                    .offset(x:-196,y: -120)
+                //左耳上
+                Circle()
+                    .frame(width: 25)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.8)
+                    .offset(x:-186,y: -240)
+                //左耳上小
+                Circle()
+                    .frame(width: 15)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.6)
+                    .offset(x:-170,y: -225)
+                //咪不理右側貼著
+                Circle()
+                    .frame(width: 43)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.8)
+                    .offset(x:116,y: 80)
+                //右側黏著下
+                Circle()
+                    .frame(width: 33)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.5)
+                    .offset(x:136,y: 95)
+                //最右小顆
+                Circle()
+                    .frame(width: 23)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.8)
+                    .offset(x:206,y: 45)
+                //右耳上小
+                Circle()
+                    .frame(width: 16)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.8)
+                    .offset(x:106,y: -182)
+                //右耳上右
+                Circle()
+                    .frame(width: 27)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.5)
+                    .offset(x:188,y: -213)
+                //右中上
+                Circle()
+                    .frame(width: 35)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.5)
+                    .offset(x:58,y: -283)
+                //右耳上
+                Circle()
+                    .frame(width: 32)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.4)
+                    .offset(x:118,y: -173)
+                //右中大顆
+                Circle()
+                    .frame(width: 62)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.6)
+                    .offset(x:228,y: -83)
+                //右耳下
+                Circle()
+                    .frame(width: 12)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.4)
+                    .offset(x:156,y: 15)
+                //右側最下
+                Circle()
+                    .frame(width: 52)
+                    .foregroundStyle(Color.white)
+                    .shadow(color: .white, radius: 6)
+                    .opacity(0.6)
+                    .offset(x:210,y: 197)
             }
-            
+                
             //聖誕樹
             ZStack{
                 //樹幹
                 UnevenRoundedRectangle(topLeadingRadius: 0, bottomLeadingRadius:5, bottomTrailingRadius: 5, topTrailingRadius: 0, style: .circular)
                     .frame(width: 22, height: 50)
                     .foregroundStyle(Color.brown)
-                    .offset(x:-176,y: 212)
+                    .offset(x:-165,y: 212)
                 //下三角形
                 Path{path in
-                    path.move(to: CGPoint(x:-170,y:140))
-                    path.addLine(to: CGPoint(x:-210,y:210))
-                    path.addLine(to: CGPoint(x:-130,y:210))
+                    path.move(to: CGPoint(x:-160,y:140))
+                    path.addLine(to: CGPoint(x:-200,y:210))
+                    path.addLine(to: CGPoint(x:-120,y:210))
                     path.closeSubpath()
                 }
                 .fill(Color(red: 30 / 255, green: 165 / 255, blue: 119 / 255))
                 .frame(width: 12,height: 12)
                 //中三角形
                 Path{path in
-                    path.move(to: CGPoint(x:-170,y:110))
-                    path.addLine(to: CGPoint(x:-205,y:180))
-                    path.addLine(to: CGPoint(x:-135,y:180))
+                    path.move(to: CGPoint(x:-160,y:110))
+                    path.addLine(to: CGPoint(x:-195,y:180))
+                    path.addLine(to: CGPoint(x:-125,y:180))
                     path.closeSubpath()
                 }
                 .fill(Color(red: 30 / 255, green: 165 / 255, blue: 119 / 255))
                 .frame(width: 12,height: 12)
                 //上三角形
                 Path{path in
-                    path.move(to: CGPoint(x:-170,y:80))
-                    path.addLine(to: CGPoint(x:-200,y:150))
-                    path.addLine(to: CGPoint(x:-140,y:150))
+                    path.move(to: CGPoint(x:-160,y:80))
+                    path.addLine(to: CGPoint(x:-190,y:150))
+                    path.addLine(to: CGPoint(x:-130,y:150))
                     path.closeSubpath()
                 }
                 .fill(Color(red: 30 / 255, green: 165 / 255, blue: 119 / 255))
@@ -83,70 +215,70 @@ struct ContentView: View {
                     .frame(width: 13)
                     .foregroundStyle(Color.yellow)
                     .shadow(color: .white, radius: 6)
-                    .offset(x:-176,y: 80)
+                    .offset(x:-166,y: 80)
                 //裝飾第一層
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.white)
                     .shadow(color: .yellow, radius: 5)
-                    .offset(x:-169,y: 112)
+                    .offset(x:-159,y: 112)
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.yellow)
                     .shadow(color: .white, radius: 5)
-                    .offset(x:-183,y: 120)
+                    .offset(x:-173,y: 120)
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.white)
                     .shadow(color: .yellow, radius: 5)
-                    .offset(x:-173,y: 125)
+                    .offset(x:-163,y: 125)
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.yellow)
                     .shadow(color: .white, radius: 5)
-                    .offset(x:-163,y: 130)
+                    .offset(x:-153,y: 130)
                 //第二層
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.white)
                     .shadow(color: .yellow, radius: 5)
-                    .offset(x:-161,y: 150)
+                    .offset(x:-151,y: 150)
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.yellow)
                     .shadow(color: .white, radius: 5)
-                    .offset(x:-171,y: 153)
+                    .offset(x:-161,y: 153)
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.white)
                     .shadow(color: .yellow, radius: 5)
-                    .offset(x:-181,y: 156)
+                    .offset(x:-171,y: 156)
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.yellow)
                     .shadow(color: .white, radius: 5)
-                    .offset(x:-191,y: 159)
+                    .offset(x:-181,y: 159)
                 //第三層
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.white)
                     .shadow(color: .yellow, radius: 5)
-                    .offset(x:-183,y: 180)
+                    .offset(x:-173,y: 180)
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.yellow)
                     .shadow(color: .white, radius: 5)
-                    .offset(x:-173,y: 185)
+                    .offset(x:-163,y: 185)
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.white)
                     .shadow(color: .yellow, radius: 5)
-                    .offset(x:-163,y: 190)
+                    .offset(x:-153,y: 190)
                 Circle()
                     .frame(width: 8)
                     .foregroundStyle(Color.yellow)
                     .shadow(color: .white, radius: 5)
-                    .offset(x:-153,y: 195)
+                    .offset(x:-143,y: 195)
                 
             }
             
@@ -456,6 +588,25 @@ struct ContentView: View {
                     }
                     .fill(.yellow)
                     .frame(width: 12,height: 12)
+                    //紅蝴蝶結
+                    ZStack{
+                        //左紅
+                        Circle()
+                            .frame(width:18)
+                            .foregroundStyle(Color.red)
+                            .offset(x:170,y: 162)
+                        //右紅
+                        Circle()
+                            .frame(width:18)
+                            .foregroundStyle(Color.red)
+                            .offset(x:159,y: 153)
+                        //中央白
+                        Circle()
+                            .frame(width:9)
+                            .foregroundStyle(Color.white)
+                            .opacity(0.8)
+                            .offset(x:164,y: 158)
+                    }
                 }
                 
             }
