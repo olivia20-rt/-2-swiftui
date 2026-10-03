@@ -48,7 +48,7 @@
 Instead of relying on raster or vector image assets (like PNGs or SVGs), this artwork is constructed **100% natively in SwiftUI** using geometric shapes, custom Bézier paths, gradient-like color fills, rotation transforms, and layered compositions.
 
 The scene depicts a cozy, festive winter holiday wonderland featuring:
-- 💚 **Mively (咪不理)**: TWICE Momo's beloved Lovely mascot, dressed in a festive Santa hat and a dapper red bow tie.
+- 💚 **Mively (咪不理)**: TWICE Mina's beloved Lovely mascot, dressed in a festive Santa hat and a dapper red bow tie.
 - 🐧 **Miguin (企鵝)**: TWICE Mina's adorable penguin mascot, wearing a charming red ribbon.
 - 🎄 **Glowing Christmas Tree**: Layered geometric pine triangles decorated with warm glowing ornaments and topped with a bright star.
 - ❄️ **Winter Snowscape & Snowflakes**: Rolling snowy hills and multi-layered glowing snowfall with depth effects.
@@ -132,8 +132,8 @@ The scene depicts a cozy, festive winter holiday wonderland featuring:
 本專案完全**不依賴任何外部圖片圖檔**（無 PNG、JPG 或 SVG 點陣／向量圖），所有角色、場景、光影、微小配件皆使用 SwiftUI 原生圖形、Bézier 路徑、幾何變形與圖層疊加（`ZStack`）純手工編寫而成！
 
 作品以溫馨夢幻的聖誕冬季為背景，描繪以下超萌元素：
-- 💚 **Mively（咪不理）**：韓國人氣女團 TWICE 成員 Momo 的代表 Lovelys 角色，戴上俏皮聖誕帽與立體紅領結。
-- 🐧 **Miguin（企鵝）**：TWICE 成員 Mina 的代表 Lovelys 企鵝，頭戴可愛小紅蝴蝶結一同過聖誕。
+- 💚 **Mively（咪不理）**：韓國人氣女團 TWICE 成員 Mina 的代表 Lovelys 角色，戴上俏皮聖誕帽與立體紅領結。
+- 🐧 **Miguin（企鵝）**：TWICE 成員 Mina 創作的企鵝，頭戴可愛小紅蝴蝶結一同過聖誕。
 - 🎄 **微光聖誕樹**：幾何三角層疊松樹，點綴著閃爍發光的雙色聖誕彩球與頂端幸運星。
 - ❄️ **冬日積雪與雪花**：層疊起伏的綿密雪地，以及錯落有致、自帶夢幻光暈的飄落雪花。
 - 🔤 **客製化節慶字體**：使用專案內嵌的字體檔（`HappySunday-Regular.ttf`）呈現柔和細緻的 "Merry Christmas" 祝福字樣。
