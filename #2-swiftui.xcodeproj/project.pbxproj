@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* #2-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "#2-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A551C1E23070FFE300BA42AB /* -2-swiftui-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-2-swiftui-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -30,6 +31,7 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
+				A551C1E23070FFE300BA42AB /* -2-swiftui-Info.plist */,
 				000000000000000000000010 /* #2-swiftui */,
 				000000000000000000000020 /* Products */,
 			);
@@ -257,6 +259,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-2-swiftui-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -296,6 +299,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-2-swiftui-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

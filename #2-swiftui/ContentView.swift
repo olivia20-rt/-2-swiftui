@@ -705,6 +705,12 @@ struct ContentView: View {
                 
             }
         }
+        Text("Merry Christmas")
+           .font(.custom("HappySundayDEMO-Regular", size: 36))
+           .foregroundStyle(Color(red: 185 / 255, green: 206 / 255, blue: 230 / 255))
+           .opacity(0.8)
+           .shadow(color: .black,radius: 0.5)
+           .offset(x: 0, y: -20)
     }
 }
 
