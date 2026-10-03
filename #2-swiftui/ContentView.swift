@@ -1,14 +1,14 @@
-import SwiftUI
 import Playgrounds
+import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
+
         ZStack {
             //背景
             Color(red: 222 / 255, green: 236 / 255, blue: 259 / 255)
                 .ignoresSafeArea()
-            
+
             //雪地
             ZStack {
                 Rectangle()
@@ -42,7 +42,7 @@ struct ContentView: View {
                     )
                     .offset(x: 180, y: 350)
             }
-            
+
             //雪花
             ZStack {
                 //最左中間
@@ -200,7 +200,7 @@ struct ContentView: View {
                     .opacity(0.4)
                     .offset(x: 175, y: -287)
             }
-            
+
             //聖誕樹
             ZStack {
                 //樹幹
@@ -310,9 +310,9 @@ struct ContentView: View {
                     .foregroundStyle(Color.yellow)
                     .shadow(color: .white, radius: 5)
                     .offset(x: -143, y: 195)
-                
+
             }
-            
+
             //Mively身體與軀幹
             ZStack {
                 //身體
@@ -370,7 +370,7 @@ struct ContentView: View {
                     .rotationEffect(.degrees(45))
                     .offset(x: -75, y: 125)
             }
-            
+
             //頭部與心形耳朵
             ZStack {
                 //頭
@@ -403,7 +403,7 @@ struct ContentView: View {
                     .rotationEffect(.degrees(35))
                     .offset(x: 90, y: -95)
             }
-            
+
             //臉部
             ZStack {
                 //白色中心
@@ -482,7 +482,7 @@ struct ContentView: View {
                 Circle()
                     .trim(from: 0.19, to: 0.31)
                     .stroke(.pink, lineWidth: 3)
-                    .frame(width: 65,height: 45)
+                    .frame(width: 65, height: 45)
                     .offset(x: 0, y: 11)
                 //痣
                 Circle()
@@ -504,7 +504,7 @@ struct ContentView: View {
                     )
                     .offset(x: 63, y: 46)
             }
-            
+
             //領結
             ZStack {
                 //脖子左陰影
@@ -552,7 +552,7 @@ struct ContentView: View {
                     .foregroundStyle(Color.red)
                     .offset(x: 0, y: 118)
             }
-            
+
             //聖誕帽
             ZStack {
                 //三角形
@@ -596,7 +596,7 @@ struct ContentView: View {
                     .shadow(color: .white, radius: 6)
                     .offset(x: -28, y: -93)
             }
-            
+
             //Miguin
             ZStack {
                 //身體
@@ -643,6 +643,7 @@ struct ContentView: View {
                     .frame(width: 15)
                     .foregroundStyle(Color.black)
                     .offset(x: 135, y: 187)
+
                 //嘴巴
                 ZStack {
                     //上黑三角形
@@ -681,7 +682,7 @@ struct ContentView: View {
                     }
                     .fill(.yellow)
                     .frame(width: 12, height: 12)
-                    
+
                     //紅蝴蝶結
                     ZStack {
                         //左紅
@@ -702,15 +703,19 @@ struct ContentView: View {
                             .offset(x: 164, y: 158)
                     }
                 }
-                
+
             }
         }
+
+        //加入客製字體
         Text("Merry Christmas")
-           .font(.custom("HappySundayDEMO-Regular", size: 36))
-           .foregroundStyle(Color(red: 185 / 255, green: 206 / 255, blue: 230 / 255))
-           .opacity(0.8)
-           .shadow(color: .black,radius: 0.5)
-           .offset(x: 0, y: -20)
+            .font(.custom("HappySundayDEMO-Regular", size: 36))
+            .foregroundStyle(
+                Color(red: 185 / 255, green: 206 / 255, blue: 230 / 255)
+            )
+            .opacity(0.8)
+            .shadow(color: .black, radius: 0.5)
+            .offset(x: 0, y: -20)
     }
 }
 
